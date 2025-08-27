@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import requests
 
-ESP_IP = "192.168.0.134"            # ваш IP
+ESP_IP = "192.168.0.132"            # ваш IP
 URL    = f"http://{ESP_IP}/stream"
 
 def stream_jpeg():
