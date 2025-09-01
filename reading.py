@@ -30,7 +30,7 @@ def main():
     cv2.namedWindow("ESP32-CAM", cv2.WINDOW_AUTOSIZE)
     try:
         for jpg in stream_jpeg():
-            frame = cv2.imdecode(np.frombuffer(jpg, np.uint8),
+            frame = cv2.imdecode(np.frombuffer(jpg, np.uint8), 
                                  cv2.IMREAD_COLOR)
             
             if frame is None:
